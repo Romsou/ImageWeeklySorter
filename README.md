@@ -14,7 +14,6 @@ dayname : directory name
 ```
 
 Notice that the images you want to sort need to use exif metadata. I originally wrote this script to automatically sort
-my course photos, hence, it's not a generalist script and it may not be suitable for your own needs. However, feel free to adapt it
-to your own needs.
+my course photos, hence, it's not a generalist script and it may not be suitable for your own needs. However, feel free to adapt it.
 
 In its current state, the script works on both Linux (tried on a Xubuntu 18.04) and Windows 10 (It should also works on OS X). 
