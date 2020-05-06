@@ -44,7 +44,10 @@ def create_directories(directories: list):
     
 
 def create_directory(directory):
-    if not Path(directory).is_dir():
+    if Path(directory).is_file():
+        print(f'Error: {directory} is a file')
+        sys.exit(1)
+    elif not Path(directory).exists():
         Path(directory).mkdir()
 
 
@@ -55,6 +58,7 @@ def sort_image(agenda):
             dayname = creation_dayname(image)
             image.close()
             move_in_dir(file, agenda, dayname)
+
 
 def creation_dayname(image):
     date = parse_date(get_creation_date(image))
